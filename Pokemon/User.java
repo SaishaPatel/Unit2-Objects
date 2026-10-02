@@ -18,6 +18,22 @@ public class User extends Actor
     public Pokemon getPokemon() {
         return this.pokemon;
     }
+    public void switched() {
+       this.pokemon.getType();
+    }
+    public void heal() {
+        pokemon.heal(); 
+    }
+    public void attack(String name, User enemy) {
+    }
+    public boolean isEndGame() {
+        if (this.pokemon.getHealth() <= 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     /**
      * Act - do whatever the User wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
