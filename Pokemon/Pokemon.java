@@ -33,9 +33,6 @@ public class Pokemon extends Actor
     public int getAPower(String aName, User enemy) {
        return 0; 
     }
-    public int getHealth() {
-        return this.hp;
-    }
 
     /**
      * Constructor for objects of class Pokemon

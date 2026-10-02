@@ -27,12 +27,7 @@ public class User extends Actor
     public void attack(String name, User enemy) {
     }
     public boolean isEndGame() {
-        if (this.pokemon.getHealth() <= 0) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return true;
     }
     /**
      * Act - do whatever the User wants to do. This method is called whenever
