@@ -39,13 +39,25 @@ public class Pokemon extends Actor
         }
     }
     public void heal() {
-        this.hp++;
+        this.hp+=20;
     }
     public Attack getAttack() {
         return this.attack;
     }
+    public int getHp() {
+        return this.hp;
+    }
+    public int getAp() {
+        return this.ap;
+    }
+    public String getName() {
+        return this.name;
+    }
+    public boolean isOut() {
+        return this.hp <=0;
+    }
     public int getAPower(String aName, User enemy) {
-       Attack a = enemy.getAttack();
+       Attack a = enemy.getPokemon().getAttack();
        return a.getPower();
     }
 

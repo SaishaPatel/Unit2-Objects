@@ -20,10 +20,7 @@ public class User extends Actor
     public Pokemon getPokemon() {
         return this.pokemon;
     }
-    public void switched() {
-       this.pokemon.getType();
-    }
-    public void switchPokemon(Pokemon) {
+    public void switchPokemon(Pokemon p) {
         setPokemon(p);
     }
     public void heal() {
@@ -32,9 +29,13 @@ public class User extends Actor
         } 
     }
     public void attack(String name, User enemy) {
+        pokemon.takeDamage(enemy.getPokemon().getAPower(name, enemy));
     }
     public boolean isEndGame() {
         return true;
+    }
+    public String getName() {
+        return this.name;
     }
     /**
      * Act - do whatever the User wants to do. This method is called whenever
