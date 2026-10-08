@@ -20,10 +20,11 @@ public class Pokemon extends Actor
         this.hp = hp;
         this.ap = ap;
         this.name = name;
-        this.img = new GreenfootImage(name+".png");
+        this.img = new GreenfootImage(name.toLowerCase()+".png");
         setImage(this.img);
         this.attack = new Attack(attack);
         this.type = type;
+        this.outStatus = false;
     }
     
     public String getType() {
