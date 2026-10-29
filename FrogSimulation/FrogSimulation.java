@@ -1,5 +1,3 @@
-package FrogSimulation;
-
 public class FrogSimulation {
     private int maxHops;
     private int goalDistance;
@@ -11,7 +9,7 @@ public class FrogSimulation {
     private int hopDistance() {
         int hop = 0;
         hop = (int)(Math.random()*10)+1;
-        if (Math.random()<0.9) {
+        if (Math.random()>0.9) {
             hop=-hop;
         }
         return hop;
@@ -30,8 +28,8 @@ public class FrogSimulation {
     public double runSimulations(int num) {
         int count = 0;
         for (int i=0; i<num; i++) {
-            if (simulate() ) {
-                count ++;
+            if (simulate()) {
+                count++;
             }
         }
         return (double) count/num;

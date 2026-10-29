@@ -5,4 +5,5 @@ public static void main(String[] args) {
     System.out.println(sim.simulate());
     System.out.println(sim.simulate());
     System.out.println(sim.simulate());
+    System.out.println(sim.runSimulations(10));
 }
